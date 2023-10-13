@@ -1,0 +1,142 @@
+<<!DOCTYPE html>
+	<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Outros elementos HTML parte 1</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<h1>Elementos do HTML</h1>
+		<h2>Elemento B e Strong(negrito e ênfase para leitores de navegação)</h2>
+		<p>O elementos b e strong tem como função destacar uma palavra, frase ou texto em negrito.
+			Mas sabemos que toda página web deve ser construida para todo tipo de usuário, principalmente
+			aos deficientes visuais. Pensando nisso na hora de destacar qual palavra em negrito, utilizaremos
+			o "strong" com ele o leitor de navegação e capaz de dar uma forte ênfase na palavra negritada.
+			Já o elemento b somente irá deixar em negrito, mas o leitor de navegação não realizara tal leitura com
+			dando ênfase a palavra.<br>
+			Exemplos abaixo =></p>
+
+		<ul>
+			<li>
+				<p>O menino jogou a bola <strong>no mato!</strong></p>
+			</li>
+			<li>
+				<p>A menina <b>corajosa</b> que entrou no mato e buscou a <b>Bolaaa!</b></p>
+			</li>
+		</ul>
+
+		<h2>Elementos I e EM (itálico em ênfase)</h2>
+		<p>Bom, a explicação para o itálico segue o mesmo príncipio do negrito,
+			ambos tem a mesma função. Pórem utilizaremos o "em" para dar ênfase para os leitores de navegação.<br>
+			Exemplos abaixo =></p>
+
+		<ul>
+			<li>
+				<p>Todo texto com um efeito <em>Itálico</em> fica um charme.</p>
+			</li>
+			<li>
+				<p>Construa uma frase com itálico: <i>Quero uma pizza italiana</i></p>
+			</li>
+		</ul>
+
+		<h2>Elementos SMALL (advertência e notas inline)</h2>
+		<p>O small sendo um elemento do tipo inline marca trechos de textos relaconados
+			com o conteúdo do texto no qual forma marcados.<br>
+			Exemplos abaixo =></p>
+
+		<h3>Valores de diárias</h3>
+		<dl>
+			<dt>Quarto de solteiro
+			<dd>R$ 300,00 <small>café da manhã incluso</small>
+			<dt>Quarto de Casal
+			<dd>R$ 490,00 <small>café da manhã incluso</small>
+		</dl>
+
+		<h2>Elementos CODE (trechos de código de computador)</h2>
+		<p>elemento de tipo inline que se destina a marcar trechos de código de computador ou qualquer
+			string que o computador reconheça. Nomes de arquivos , nome de um programa, nome de um
+			elemento HTML, trechos de código.<br>
+			Exemplos abaixo =></p>
+
+		<p>Os elementos <code>div</code> e <code>span</code> da HTML não tem valor semântico.</p>
+
+		<h2>Elementos HR (criando uma linha)</h2>
+		<p>elemento de tipo nível de bloco criado para gerar uma linha na horizontal de 1px (pixel) na página web.
+			Não possui tag de fechamento veja abaixo.<br>
+			Exemplos abaixo =></p>
+
+		<p>Estudando os elementos do HTML.</p>
+		<hr>
+		<p>Vamos da prosseguimentos com outros elementos.</p>
+
+		<h2>Elementos BR (quebra de linha)</h2>
+		<p>elemento tipo vazio onde a única função é realizar que de linha nos textos.<br>
+			Exemplos abaixo =></p>
+
+		<p>Os elementos <code>head</code> e <code>header</code><br>
+			São totalmentes diferentes.</p><br><br>
+
+		<p>Acima realizei apenas uma quebra de linha entre os textos, neste vou realizar duas quebras repetindo br por
+			dua vezes o exemplo fica pela espaçamento entre o textos. </p>
+
+		<h2>Elemento IMG (inserindo uma imagem ao corpo HTML)</h2>
+		<p>Estilo de elemento inline e vazio, isto é, pois existe somento uma tag de abaertura
+			<code>img</code> e destina-se a inserir uma imagem no documento.
+		</p>
+		Exemplo abaixo =><br>
+
+		<img src="./imagem/favicon-luffy.png" alt="imagem do luffy"><br><br>
+
+		<h2>Elemento AUDIO (inserindo audio no documento HTML)</h2>
+		<p>Estilo de elemento nível de bloco e destina-se a inseriri uma audio ao documento HTML
+			<code>audio</code>.<br>
+			Exemplo abaixo =>
+		</p><br>
+
+
+		<audio controls src="./audio/trap-future.mp3" type="audio/mpeg"></audio><br>
+
+		<h2>Elemento VIDEO (inserindo vídeo no documento HTML)</h2>
+		<p>Estilo de elemento nível de bloco e destina-se a inseriri uma vídeo ao documento HTML
+			<code>video</code>.<br>
+			Exemplo abaixo =>
+		</p><br>
+
+		<h2>Exemplo 1: Vídeo com width de 400 autoplay e muted</h2>
+
+		<video width="400" controls autoplay muted>
+
+			<!--Uma observação é de boa pratica colocarmos outros formatos de vídeo pois cada nevegar tem sua regra-->
+			<!--Eu coloquei esses outros formatos meramente informativo para exemplo da boa prática tanto no exemplo 1 e 2-->
+			<!--É feito assim pois se uma navegador não aceitar aquele vídeo ele vai um a um tentando carregar o player-->
+			
+			<source src="./video/Yu Yu Hakusho.mp4" type="video/mp4">
+			<source src="./video/two-lions-walk-way.ogg" type="video/ogg">
+			<source src="./video/two-lions-walk-way.webm" type="video/webm">
+			<source src="./video/two-lions-walk-way.mkv" type="video/mkv">
+
+		</video>
+
+		<h2>Exemplo 2: Vídeo com width 500 loop no vídeo e poster de capa (thumbnail)</h2>
+		
+		<video width="500" controls loop poster="./imagem/Kamen Rider W Title Card.png">
+
+			<source src="./video/Kamenrider W.mp4" type="video/mp4">
+			<source src="./video/video.mp4.ogg" type="video/ogg">
+			<source src="./video/video.mp4.webm" type="video/webm">
+			<source src="./video/video.mp4.mkv" type="video/mkv">
+
+		</video>
+
+	
+
+
+
+
+
+	</body>
+
+	</html>
